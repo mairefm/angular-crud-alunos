@@ -1,59 +1,61 @@
-# AngularCrud
+# Gestão de Alunos — CRUD com Angular 17 + Material Design
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.2.
+![Angular 17](https://img.shields.io/badge/Angular-17-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![Material Design](https://img.shields.io/badge/Material%20Design-17-757575?style=for-the-badge&logo=materialdesign&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.5-blue?style=for-the-badge&logo=typescript&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
 
-## Development server
+CRUD completo, moderno e 100% funcional para gerenciamento de alunos, desenvolvido do zero com as melhores práticas atuais do Angular.
 
-To start a local development server, run:
+## Funcionalidades
+
+- Listagem com tabela responsiva e chips de status  
+- Cadastro, edição e exclusão de alunos  
+- Validação completa com Reactive Forms  
+- Feedback visual com SnackBar personalizado  
+- Design premium com gradientes, animações e totalmente responsivo  
+- API mock com JSON Server
+
+## Tecnologias
+
+- Angular (Standalone Components)
+- Angular Material
+- Reactive Forms + Validators
+- TypeScript com tipagem forte
+- SCSS personalizado
+- JSON Server
+
+## Como executar
 
 ```bash
+# 1. Clone o repositório
+git clone https://github.com/SEU-USUARIO/angular-crud.git
+
+# 2. Entre na pasta
+cd angular-crud
+
+# 3. Instale as dependências
+npm install
+
+# 4. Crie o banco de dados a partir do exemplo
+cp db-example.json db.json
+
+# 5. Inicie o JSON Server (em outro terminal)
+npx json-server --watch db.json --port 3000
+
+# 6. Execute o Angular
 ng serve
+
 ```
+Acesse → [http://localhost:4200](http://localhost:4200)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Próximos passos (já mapeados)
 
-## Code scaffolding
+- Filtro e busca na listagem  
+- Paginação na tabela  
+- Exportação para PDF/Excel  
+- Autenticação com JWT  
+---
+Se curtiu o projeto, deixa uma ⭐!
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Qualquer dúvida ou sugestão, é só abrir uma issue ou me chamar no LinkedIn.  
