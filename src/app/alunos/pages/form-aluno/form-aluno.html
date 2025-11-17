@@ -1,0 +1,58 @@
+<div class="form-container">
+    <h2>{{ modoEdicao ? 'Editar Aluno' : 'Novo Aluno' }}</h2>
+    <div class="form-content">
+        <form [formGroup]="formulario" (ngSubmit)="salvar()">
+            <mat-form-field appearance="outline" class="full-width">
+                <mat-label>Nome</mat-label>
+                <input matInput formControlName="nome">
+                <mat-error *ngIf="formulario.get('nome')?.hasError('required')">
+                    Nome obrigatório
+                </mat-error>
+                <mat-error *ngIf="formulario.get('nome')?.hasError('minlength')">
+                    Mínimo 3 caracteres
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="full-width">
+                <mat-label>Email</mat-label>
+                <input matInput type="email" formControlName="email">
+                <mat-error *ngIf="formulario.get('email')?.hasError('required')">
+                    Email obrigatório
+                </mat-error>
+                <mat-error *ngIf="formulario.get('email')?.hasError('email')">
+                    Email inválido
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="full-width">
+                <mat-label>Curso</mat-label>
+                <mat-select formControlName="curso">
+                    <mat-option value="">Selecione...</mat-option>
+                    <mat-option value="Frontend">Frontend</mat-option>
+                    <mat-option value="Backend">Backend</mat-option>
+                    <mat-option value="Fullstack">Fullstack</mat-option>
+                </mat-select>
+                <mat-error *ngIf="formulario.get('curso')?.hasError('required')">
+                    Curso obrigatório
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="full-width">
+                <mat-label>Status</mat-label>
+                <mat-select formControlName="status">
+                    <mat-option value="Ativo">Ativo</mat-option>
+                    <mat-option value="Inativo">Inativo</mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <div class="botoes">
+                <button mat-raised-button color="primary" type="submit" [disabled]="formulario.invalid">
+                    <mat-icon>save</mat-icon> Salvar
+                </button>
+                <button mat-stroked-button type="button" (click)="voltar()">
+                    <mat-icon>close</mat-icon> Cancelar
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
