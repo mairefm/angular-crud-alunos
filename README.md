@@ -7,6 +7,12 @@
 
 CRUD completo, moderno e 100% funcional para gerenciamento de alunos, desenvolvido do zero com as melhores práticas atuais do Angular.
 
+## Preview
+
+| Lista de Alunos                         | Novo Aluno                              | Editar Aluno                            |
+|-----------------------------------------|-----------------------------------------|-----------------------------------------|
+| ![Lista de Alunos](screenshots/lista.png) | ![Novo Aluno](screenshots/novo-aluno.png) | ![Editar Aluno](screenshots/edit-aluno.png) |
+
 ## Funcionalidades
 
 - Listagem com tabela responsiva e chips de status  
@@ -59,3 +65,4 @@ Acesse → [http://localhost:4200](http://localhost:4200)
 Se curtiu o projeto, deixa uma ⭐!
 
 Qualquer dúvida ou sugestão, é só abrir uma issue ou me chamar no LinkedIn.  
+
